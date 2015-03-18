@@ -13,6 +13,7 @@ void count_sort(int *a, int *b, int length, int k)
         //for(i = 0; i < 8; i++) printf("%d ",b[i]);
         //printf("\n");
     }
+    free(c);
 }
 main()
 {
