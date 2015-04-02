@@ -11,7 +11,7 @@ void merge(int *a, int p, int q, int r){
 	for(j = 0; j < n; j++){
 		right[j] = a[q + 1 + j];
 	}
-	left[m + 1] = right[n + 1] = INT_MAX;
+	left[m] = right[n] = INT_MAX;
 	for(i = j = 0, k = p; k <= r; k++){
 		if(left[i] < right[j]){
 			a[k] = left[i];
@@ -38,5 +38,5 @@ main(){
 	int i;
 	for(i = 0; i < 8; i++){
 		printf("%d ", a[i]);
-	}	 
+	}
 }
